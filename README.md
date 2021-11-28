@@ -110,7 +110,7 @@ ovs-vsctl set-controller s2 tcp:10.0.0.1:6653
 
 h1 ping h2：
 ```
-ip netns exec h1 ping 10.0.0.6
+ip netns exec h1 ping 10.0.0.4
 ```
 h1和h2进行socket通信，分别在控制节点和普通节点运行：
 ```
