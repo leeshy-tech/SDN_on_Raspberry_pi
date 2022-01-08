@@ -3,7 +3,7 @@
 import socket
 
 with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
-    s.bind(("10.0.0.4",1234))        # bind a IP and port to this socket
+    s.bind(("10.0.0.2",1234))        # bind a IP and port to this socket
     s.listen()
     c,addr = s.accept()
     with c:

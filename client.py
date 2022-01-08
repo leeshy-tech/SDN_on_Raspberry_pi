@@ -12,6 +12,6 @@ a1=[0, -0.5, 0, 1, 0, -0.5, 0, 2, 0.5, 0, 0, 2, 0.5, 0, 0, 2, 0, 0.5,\
 -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100,\
  -100, -100, -100, -100, -100, -100]
 with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
-    s.bind(("10.0.0.3",1234))      # bind a IP and port to this socket
-    s.connect(("10.0.0.4",1234))   # to connect the common node
+    s.bind(("10.0.0.1",1234))      # bind a IP and port to this socket
+    s.connect(("10.0.0.1",1234))   # to connect the common node
     s.sendall(str(a1).encode('utf-8'))
